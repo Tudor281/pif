@@ -1,8 +1,10 @@
 package tudor.pif;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -11,8 +13,17 @@ import java.util.*;
  *
  */
 public class App {
-    static void main() throws IOException {
-        String script = Files.readString(Path.of("ai.pif"));
+    static void main() throws IOException, URISyntaxException {
+
+        Path jarDir = Paths.get(
+                App.class
+                        .getProtectionDomain()
+                        .getCodeSource()
+                        .getLocation()
+                        .toURI()
+        ).getParent();
+
+        String script = Files.readString(jarDir.resolve("ai.txt"));
         String[] lines = script.split(System.lineSeparator());
 
         Map<String, List<String>> sections = new HashMap<>();
