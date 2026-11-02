@@ -62,6 +62,8 @@ public class App {
         random(sections, "Family", true, 7);
 
         general(sections, 2);
+
+        random(sections, "Coping", true, 1, 2, 3, 4, 5);
     }
 
     static void random(Map<String, List<String>> sections, String section, boolean remove, int... days) {
