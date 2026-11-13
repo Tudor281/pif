@@ -170,6 +170,7 @@ Remember how you shouted and cursed your mates in DotA when they said they don't
 I want to see the day a manager will say: The situation is absolute shit, let's do what we can.
 Giving a deadline assumes that everything is reliable and has been done over and over again.
 Deadlines and estimations are the biggest source of shortsighted decisions.
+If you try to prove you're the best by delivering the most and the quickest, you prove you're a very lightweight software.
 
 # Weight
 I want to lose weight to feel better.
